@@ -55,11 +55,7 @@ function App() {
     const newGameState = [...gameState];
     newGameState[index] = player;
     setGameState(newGameState);
-    if (player === "X") {
-      setPlayer("O");
-    } else {
-      setPlayer("X");
-    }
+    player === "X" ? setPlayer("O") : setPlayer("X");
   };
 
   const restartGame = () => {
